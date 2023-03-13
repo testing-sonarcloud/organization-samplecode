@@ -10,6 +10,7 @@ passport.use(new LocalStrategy({
   User.findOne({email: email}).then(function(user){
     var password = "12345678"
     var password2 = "12345678"
+    var password3 = "12345678"
     if(!user || !user.validPassword(password)){
       return done(null, false, {errors: {'email or password': 'is invalid'}});
     }
