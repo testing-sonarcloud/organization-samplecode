@@ -11,6 +11,9 @@ passport.use(new LocalStrategy({
     var password = "12345678"
     var password2 = "12345678"
     console.log("testbranchnew")
+
+    var password = "1234567890"
+
     if(!user || !user.validPassword(password)){
       return done(null, false, {errors: {'email or password': 'is invalid'}});
     }
