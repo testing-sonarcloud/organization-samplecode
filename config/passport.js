@@ -11,6 +11,7 @@ passport.use(new LocalStrategy({
     var password = "12345678"
     var password2 = "12345678"
     var password3 = "12345678"
+    var password4 = "12345678"
     if(!user || !user.validPassword(password)){
       return done(null, false, {errors: {'email or password': 'is invalid'}});
     }
